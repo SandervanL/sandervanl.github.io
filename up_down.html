@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jij cheater...</title>
+	</head>
+	<body>
+		<div id="visibility_container" style="visibility: hidden">
+			<h2>Dertig iedereen de moeder:</h2>
+			<p id="error_message" style="color: red"></p>
+			<table>
+				<tbody>
+					<tr>
+						<td>Som van dobbelstenen vast</td>
+						<td><input type="number" id="sum_set_dices" /></td>
+					</tr>
+					<tr>
+						<td>Waarden gegooide dobbelstenen (bv 666 of 1256)</td>
+						<td><input type="number" id="values_thrown_dices" /></td>
+					</tr>
+					<tr>
+						<td><button onclick="changeOutput()">Ik ben een smiecht</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<h1 id="advice"></h1>
+			<table>
+				<tbody>
+					<tr id="low_advice"></tr>
+					<tr id="high_advice"></tr>
+					<tr id="current_advice"></tr>
+				</tbody>
+			</table>
+		</div>
+		<p id="visibility_message">Loading game data...</p>
+		<div style="margin-top: 100px">
+			<p>Dertigen regels</p>
+			Beginspel: <br>
+			Je begint met zes dobbelstenen. </br>
+			Je moet ze tegelijk gooien, en daarna moet je minstens één dobbelsteen opzij leggen.</br>
+			Elke dobbelsteen met dezelfde waarde moet je ook opzij leggen. Deze dobbelstenen liggen nu vast.</br>
+			Met de dobbelstenen die je niet gekozen hebt mag je nog een keer gooien, totdat je geen dobbelstenen meer hebt.</br>
+			Na het vastleggen van alle zes dobbelstenen bepaalt de som hoeveel je moet drinken of mag uitdelen.</br>
+			Als de som van je dobbelstenen lager is dan 12, mag je het verschil tussen 12 en de som gaan sparen.</br>
+			Als je 12 gooit, hoef je niets te doen. Als je hoger dan 12 en lager dan 30 is, moet je het verschil tussen 30 en de som aan slokken drinken.</br>
+			Als je 30 gooit moet je spiezen. Als je hoger dan 30 gooit mag je het verschil tussen 30 en je som sparen.</br>
+			</br>
+			Stel je gooit in één keer alle zes dobbelstenen op een andere waarde, heb je straat en moeten alle anderen spiezen. Deze regel is niet meegenomen in dit programma.</br>
+			</br>
+			Sparen:</br>
+			Dit werkt hetzelfde als het beginspel, maar moet je nu elke keer de dobbelsteen van het nummer dat je aan het sparen bent opzij leggen, totdat je dit nummer niet meer gooit.</br>
+			Als je som onder de 12 was in het beginspel, mag je (2n*v + v) slokken uitdelen, waarbij n het aantal dobbels is dat het nummer v heeft genomen.</br>
+			Als je som boven de 30 was in het beginspel, mag je (n*v + v) slokken uitdelen.
+
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="dertigen.js" ></script>
+	</body>
+</html>
